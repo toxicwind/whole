@@ -1,0 +1,34 @@
+{
+  "name": "whole",
+  "version": "1.0.0",
+  "description": "Read files to the END, no skipping — the anti-overclaim sequential pager that nags until you finish.",
+  "aliases": [
+    "read-all",
+    "finish-the-file",
+    "no-skip",
+    "peruse",
+    "anti-overclaim",
+    "read-to-the-end",
+    "rl"
+  ],
+  "type": "module",
+  "private": true,
+  "bin": {
+    "whole": "bin/whole.ts"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./pager": "./src/pager.ts",
+    "./state": "./src/state.ts",
+    "./cli": "./src/cli.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "check": "bunx oxlint . && bunx oxfmt --check 'src/**/*.ts' 'bin/**/*.ts' 'test/**/*.ts'",
+    "lint": "bunx oxlint ."
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "bun-types": "^1.4.4"
+  }
+}

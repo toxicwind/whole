@@ -1,0 +1,23 @@
+# dependency directories
+node_modules/
+
+# build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# runtime state
+*.local
+.env
+.env.*
+!.env.example
+
+# editor/os
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# lapidary undo trail
+.lapidary-undo.jsonl
